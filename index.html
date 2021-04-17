@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="googleSignIn">Google Sign In</button>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCf4kjUA_DNoSFAwCh_WqJSMOnRVcZQAvs",
+        authDomain: "todo-js-27031.firebaseapp.com",
+        projectId: "todo-js-27031",
+        storageBucket: "todo-js-27031.appspot.com",
+        messagingSenderId: "161864012974",
+        appId: "1:161864012974:web:f4ecf13e54264ec447493f",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

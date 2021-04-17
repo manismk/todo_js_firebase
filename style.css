@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+h2,
+h3 {
+  margin: 0.4rem 0;
+}
+p {
+  margin: 0.1rem 0;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #e5e7eb;
+}
+.googleSignIn {
+  font-size: 2rem;
+  display: block;
+  margin: auto;
+  font-family: "Ubuntu", sans-serif;
+}
+.todohead {
+  display: flex;
+  padding: 0.4rem;
+  justify-content: space-between;
+}
+.signOut {
+  font-size: 1.1rem;
+}
+.todobox {
+  padding: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+#todo {
+  padding: 0.2rem;
+  font-size: 1.5rem;
+  width: 80%;
+  font-family: inherit;
+}
+.addTodo {
+  margin: 0.2rem;
+}
+.todoList {
+  padding: 0.4rem;
+}
+.todoList h3 {
+  text-align: center;
+}
+.list {
+  margin: 0.2rem 0;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0.4rem;
+}
+.green {
+  background-color: #d1fae5;
+  color: #047857;
+}
+.red {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+.todoText {
+  font-size: 1.3rem;
+}
