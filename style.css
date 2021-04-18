@@ -14,6 +14,11 @@ p {
   max-width: 600px;
   margin: auto;
   background-color: #f9fafb;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 6px 11px 10px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 11px 10px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 11px 10px -1px rgba(0, 0, 0, 0.75);
 }
 .googleSignIn {
   position: absolute;
@@ -21,8 +26,15 @@ p {
   top: 50%;
   font-size: 2rem;
   transform: translate(-50%, -50%);
-
+  border: none;
   font-family: "Ubuntu", sans-serif;
+
+  padding: 0.1rem 1rem;
+  border: 1px solid #374151;
+  border-radius: 1rem;
+  -webkit-box-shadow: 6px 11px 10px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 11px 10px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 11px 10px -1px rgba(0, 0, 0, 0.75);
 }
 
 .googleSignIn img {
@@ -47,6 +59,8 @@ p {
   width: 80%;
   font-family: inherit;
   outline: none;
+  border: none;
+  border-bottom: 2px solid #4b5563;
 }
 
 .todoList {
@@ -94,15 +108,15 @@ p {
 }
 
 .btn {
-  border: 1px solid #047857;
+  border: 1px solid #4b5563;
   font-family: inherit;
   padding: 0.1rem 1rem;
-  background-color: #d1fae5;
+  background-color: #f3f4f6;
   color: #047857;
   margin: 0.2rem 0.1rem;
   border-radius: 1rem;
 }
 .btn:hover {
-  color: #d1fae5;
-  background-color: #047857;
+  color: #f3f3f3;
+  background-color: #4b5563;
 }
