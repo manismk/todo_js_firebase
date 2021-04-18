@@ -20,6 +20,7 @@ const signOut = document.querySelector(".signOut");
 const todolist = document.querySelector(".todoList");
 const addTodo = document.querySelector(".addTodo");
 const todo = document.querySelector("#todo");
+const image = document.querySelector(".image");
 let userUid;
 if (window.location.pathname === "/todo.html") {
   updateUserData();
@@ -73,6 +74,7 @@ function updateUserData() {
       //console.log(user);
       userName.innerText = `Welcome ${firebase.auth().currentUser.displayName}`;
       userUid = firebase.auth().currentUser.uid;
+      image.src = firebase.auth().currentUser.photoURL;
     } else {
     }
   });

@@ -120,3 +120,18 @@ p {
   color: #f3f3f3;
   background-color: #4b5563;
 }
+
+.signOut {
+  font-size: 1.2rem;
+
+  transform: translateY(5%);
+  padding-right: 0.5rem;
+}
+.btn img {
+  display: relative;
+  border-radius: 50%;
+  width: 1.5rem;
+  margin-left: 0.5rem;
+  margin-top: -0.3em;
+  margin-bottom: -0.3em;
+}
