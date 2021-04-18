@@ -13,36 +13,42 @@ p {
 .container {
   max-width: 600px;
   margin: auto;
-  background-color: #e5e7eb;
+  background-color: #f9fafb;
 }
 .googleSignIn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
   font-size: 2rem;
-  display: block;
-  margin: auto;
+  transform: translate(-50%, -50%);
+
   font-family: "Ubuntu", sans-serif;
+}
+
+.googleSignIn img {
+  width: 1.5rem;
+  margin-right: 0.5rem;
 }
 .todohead {
   display: flex;
   padding: 0.4rem;
   justify-content: space-between;
 }
-.signOut {
-  font-size: 1.1rem;
-}
+
 .todobox {
   padding: 0.4rem;
   display: flex;
   justify-content: space-between;
 }
 #todo {
+  background-color: #f9fafb;
   padding: 0.2rem;
   font-size: 1.5rem;
   width: 80%;
   font-family: inherit;
+  outline: none;
 }
-.addTodo {
-  margin: 0.2rem;
-}
+
 .todoList {
   padding: 0.4rem;
 }
@@ -85,4 +91,18 @@ p {
   border-radius: 50%;
   cursor: pointer;
   font-size: 1.2rem;
+}
+
+.btn {
+  border: 1px solid #047857;
+  font-family: inherit;
+  padding: 0.1rem 1rem;
+  background-color: #d1fae5;
+  color: #047857;
+  margin: 0.2rem 0.1rem;
+  border-radius: 1rem;
+}
+.btn:hover {
+  color: #d1fae5;
+  background-color: #047857;
 }
