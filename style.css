@@ -46,15 +46,15 @@ p {
 .todoList {
   padding: 0.4rem;
 }
-.todoList h3 {
+.todoList h2 {
   text-align: center;
 }
 .list {
-  margin: 0.2rem 0;
+  margin: 0.5rem 0;
   display: flex;
   justify-content: space-between;
-
-  padding: 0.4rem;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
 }
 .green {
   background-color: #d1fae5;
@@ -65,5 +65,24 @@ p {
   color: #b91c1c;
 }
 .todoText {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+}
+.red .todoText {
+  text-decoration: line-through;
+}
+.done {
+  background-color: #28a745;
+  color: #fff;
+  padding: 0.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.delete {
+  background-color: #b91c1c;
+  color: #fff;
+  padding: 0.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
