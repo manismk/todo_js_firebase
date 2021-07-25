@@ -1,3 +1,13 @@
+var firebaseConfig = {
+  apiKey: "AIzaSyCf4kjUA_DNoSFAwCh_WqJSMOnRVcZQAvs",
+  authDomain: "todo-js-27031.firebaseapp.com",
+  projectId: "todo-js-27031",
+  storageBucket: "todo-js-27031.appspot.com",
+  messagingSenderId: "161864012974",
+  appId: "1:161864012974:web:f4ecf13e54264ec447493f",
+};
+firebase.initializeApp(firebaseConfig);
+
 const signIn = document.querySelector(".googleSignIn");
 if (signIn) {
   signIn.addEventListener("click", googleSignIn);
@@ -49,14 +59,20 @@ function renderUserData(doc) {
   const btnDone = document.querySelector(`[data-id='${doc.id}'] .done`);
 
   btnDone.addEventListener("click", () => {
-    db.collection(`users/${userUid}/todos`).doc(`${doc.id}`).update({
-      complete: true,
-    });
+    firebase
+      .firestore()
+      .collection(`users/${userUid}/todos`)
+      .doc(`${doc.id}`)
+      .update({
+        complete: true,
+      });
   });
 
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection(`users/${userUid}/todos`)
+    firebase
+      .firestore()
+      .collection(`users/${userUid}/todos`)
       .doc(`${doc.id}`)
       .delete()
       .then(() => {
@@ -82,7 +98,9 @@ function updateUserData() {
 
 firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
-    db.collection(`users/${userUid}/todos`)
+    firebase
+      .firestore()
+      .collection(`users/${userUid}/todos`)
       .orderBy("creadtedAt", "desc")
       .onSnapshot((snapshot) => {
         snapshot.docChanges().forEach((change) => {
@@ -114,7 +132,7 @@ if (addTodo) {
     if (todo.value === "") {
       alert("please enter something");
     } else {
-      const ref = db.collection(`users/${userUid}/todos`);
+      const ref = firebase.firestore().collection(`users/${userUid}/todos`);
       ref.add({
         text: todo.value,
         complete: false,
